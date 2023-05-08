@@ -1,0 +1,48 @@
+body{
+	font-family: Verdana;
+	font-size: 14px;
+	background-color: silver;
+}
+header{
+	background-color:white;
+	height: 100px;
+}
+#logo{ float: left;  }
+#particulares{ 
+		background-color:grey;
+		color:white;
+		padding: 10px;
+}
+
+div > h2{ color: gold;
+}
+section p { color: gold;}
+
+section.modelos div{
+ display:inline-block;
+}
+img:hover{
+filter: drop-shadow(0 2px 5px gold);
+}
+ul{
+  list-style-type:square;
+}
+ul li{
+  background: #ffff66;
+  margin:5px;
+  padding:5px;
+}
+
+footer{ background-color:white;
+	font-family: Arial;
+	font-size:10px;
+	color:grey; 
+	border-style: dotted;
+	text-align: center;
+}
+
+a{ text-decoration:none;
+   color:black;}
+footer a:hover{ color:fuchsia;}
+
+

@@ -1,0 +1,11 @@
+/*Estilo de párrafo color rojo*/
+p{ 
+	color: red;
+}
+dl{
+	color:blue;
+	font-size: 30px;
+}
+dt{
+	color:green;
+}

@@ -1,0 +1,12 @@
+#modelos{
+  display: flex;
+  flex-wrap: wrap;
+}
+section > #elemento{
+	background-color: blue;
+}
+
+footer{
+   position: bottom;
+   border-style: solid;
+}

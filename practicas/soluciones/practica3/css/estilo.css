@@ -1,0 +1,79 @@
+body{
+	font-family: Verdana;
+	font-size: 14px;
+	background-color: silver;
+}
+header{
+	background-color:white;
+	height: 100px;
+}
+#logo{ float: left;  }
+
+.nav { 
+    display:flex;
+    justify-content: space-around;
+}
+.opaco{
+  opacity: 0.5;
+}
+#particulares{ 
+		background-color:grey;
+		color:white;
+		padding: 10px;
+}
+
+div > h2{ color: gold;
+}
+section p { color: gold;}
+
+section.modelos div{
+ display:inline-block;
+}
+h3{
+ color:gold;
+ text-shadow: 2px 2px #6A6361;
+}
+img:hover{
+filter: drop-shadow(0 2px 5px gold);
+}
+ul{
+  list-style-type:square;
+}
+ul li{
+  background: #ffff66;
+  margin:5px;
+  padding:5px;
+}
+
+footer{ background-color:white;
+	font-family: Arial;
+	font-size:10px;
+	color:grey; 
+	border-style: dotted;
+	text-align: center;
+}
+
+a{ text-decoration:none;
+   color:black;}
+footer a:hover{ color:fuchsia;}
+
+table{
+    margin:2em;
+    width:90%;
+marging:20px;
+    
+}
+table caption{
+ 	font-size:20px;
+	color:gold;
+	text-shadow: 2px 2px #6A6361;
+}
+th{
+text-align:center;
+border: 2px dotted gold;
+}
+td{
+    border: 1px solid white;
+}
+
+

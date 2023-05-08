@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formulario en HTML5</title>
+</head>
+<body>
+	<form method="POST" 
+	      oninput="nombreCompleto.value=nombre.value+' '+apellidos.value; lsalario.value=salario.value"
+	      autocomplete novalidate>
+		<input type="hidden" name="id" value="1" />
+		<fieldset>
+			<legend>Datos Usuario</legend>
+			<label for="codEmpleado">Código de Empleado</label><br> <input type="text"
+				id="codEmpleado" name="codEmpleado" value="COD0001" disabled><br>
+			<label for="username">Username:</label><br> <input type="text"
+				id="username" name="username" autofocus><br> <label for="pwd">Password:</label><br>
+			<input type="password" id="pwd" name="pwd" >
+		</fieldset>
+		<fieldset>
+			<legend>Datos Empleado</legend>
+			<label for="nombre">Nombre:</label> 
+			<input id="nombre" name="nombre" maxlength="50" size="10" required><br> 
+			<label for="apellidos">Apellidos:</label> 
+			<input id="apellidos" name="apellidos" maxlength="50" size="20"><br> 	
+			<label for="nombreCompleto">NombreCompleto:</label>
+				<output id="nombreCompleto" for="nombre apellidos"></output><br>			
+			<label for="tipoEmpleado">Tipo Empleado:</label>
+			<input list="tipoEmpleado"
+				name="tipoEmpleado" required><br>
+			<datalist id="tipoEmpleado">
+				<option value="Interno">
+				<option value="Externo">
+			</datalist>
+			<label for="carnet">Carnet</label><br>
+			<input type="radio" id="carnet" name="carnet" value="0">
+  			<label for="0">Sin Carnet</label><br>
+  			<input type="radio" id="1" name="carnet" value="1">
+  			<label for="1">B2</label><br>
+  			<input type="radio" id="2" name="carnet" value="2">
+  			<label for="2">Otros</label><br> 			
+  			
+  			<label for="fechaNacimiento">Fecha Nacimiento:</label>
+  			<input type="date" id="fechaNacimiento" name="fechaNacimiento" required/><br>
+  			
+  			<label for="telefono">Telefono:</label>
+  			<input type="tel" id="telefono" name="phone" pattern="[0-9]{9}" placeholder="678529852">  			
+  			
+  			<label for="email">Email:</label>
+  			<input type="email" id="email" name="email" required ><br>
+  			
+  			<label for="appt">Select a time:</label>
+  			<input type="time" id="appt" name="appt">
+  			<label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+  			
+  			
+  			<label for="homepage">Añadir página:</label>
+  <input type="url" id="homepage" name="homepage">
+  			
+  			
+  			
+  			<label for="fichero">Documento DNI:</label>
+  			<input type="file" id="fichero" name="fichero"><br>
+		</fieldset>
+		<fieldset>
+			<legend>Datos Contratación</legend>
+			<label for="puesto">Puesto:</label>
+			<select id="puesto" name="puesto">
+  				<option value="1">Desarrollador</option>
+  				<option value="2">Analista</option>
+  				<option value="3">Jefe Proyecto</option>
+  				<option value="4">Gerente</option>
+			</select><br>
+			<label for="perfil">Perfil:</label>
+			<select id="perfil" name="perfil" multiple>
+  				<option value="1">Administrador BBDD</option>
+  				<option value="2">Desarrollador Front-End</option>
+  				<option value="3">Desarrollador Java</option>
+  				<option value="4">Desarrollador NET</option>
+			</select><br>   			
+  			<label for="mesContratacion">Mes contrato:</label>
+  			<input type="month" id="mesContratacion" name="mesContratacion"><br>
+  			
+  			<label for="salario">Rango salarial:</label>
+  			<input type="range" id="salario" name="salario" min="0" max="60000" step="1000" value="25000">
+			<output id="lsalario" for="salario"></output><br>									
+		</fieldset>
+		<fieldset>
+		<legend>Configuración Aplicación</legend>
+			<label for="favcolor">Select color para su perfil:</label>
+  			<input type="color" id="favcolor" name="favcolor"><br>
+  			<label for="busqueda">Búsqueda:</label>
+  			<input type="search" id="gsearch" name="busqueda">  			
+		</fieldset>
+		<textarea name="comentario" rows="4" cols="50" > Algún comentario
+		</textarea><br>
+		<input type="submit" value="Enviar"/> 
+		<input type="reset" value="Limpiar" />
+	</form>
+</body>
+</html>
